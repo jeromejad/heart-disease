@@ -1,5 +1,6 @@
-import numpy as np
+
 from flask import Flask, request, jsonify, render_template
+import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import RandomizedSearchCV
