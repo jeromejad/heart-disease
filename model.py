@@ -4,7 +4,7 @@ from sklearn.svm import SVC, LinearSVC
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.externals import joblib
+import joblib
 import numpy as np
 import pandas as pd
 import pickle
