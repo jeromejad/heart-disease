@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Diagnosis</title>
 </head>
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Heart Disease Diagnosis</a>
+<div class="pt-2">
+<nav class="navbar navbar-light" style="background-color:#ecf0f3 ;">
+    <a class="navbar-brand" style="letter-spacing: 1px;" href="#">Heart Disease Diagnosis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,15 +26,16 @@
         </ul>
     </div>
 </nav>
+</div>
 <body>
-    
-    <div class="jumbotron hero-nature">
+    <div class="pt-5">
+    <div class="jumbotron hero-nature container element">
         <h1 class="hero-title">You have been diagnosed with no disease. Congratulations</h1>
         <p>The algorithm has diagnosed you with no heart disease based on your inputs. However it might be better to talk to a doctor regardless.</p>
-    </div>
+    </div></div>
     <style>
     div.jumbotron.hero-nature {
-        color: white;
+        color: black;
         text-align: center;
         background: url('bg.jpg');
         background-size: contain;
@@ -50,6 +52,37 @@
     .col-lg-4 {
         color: #ffffff;
     }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+    body {
+        background: #ecf0f3;
+        color: black;
+        font-family: poppins;
+    }
+    
+    .col-lg-4 {
+        color: #ffffff;
+    }
+    
+    .element {
+        box-sizing: border-box;
+      background: #ecf0f3;
+      border-radius: 20px;
+      box-shadow: 20px 20px 50px #cbced1, -14px -14px 20px white;
+    
+    }
+    .navbar {
+        background: #ecf0f3;
+      box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    .element div {
+        color: black;
+        font-family: poppins;
+    }
+   
     </style>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

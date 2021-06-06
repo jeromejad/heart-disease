@@ -10,8 +10,15 @@ app = Flask(__name__, static_folder='static')
 
 @app.route("/")
 def index():
-    return render_template('home.html')
+    return render_template('welcome.html')
 
+@app.route("/about")
+def about():
+    return render_template('welcome.html')
+
+@app.route("/home")
+def form():
+    return render_template('home.html')
 
 @app.route('/result', methods=['POST', 'GET'])
 def result():
@@ -46,12 +53,9 @@ def result():
 
     # y=1,2,4,4 are stages of heart disease
     else:
-        return render_template('heartdisease.htm', stage=int(y))
+        return render_template('heartdisease.html', stage=int(y))
 
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
 
 
 if __name__ == "__main__":
