@@ -17,6 +17,7 @@ path_df = os.path.join(root, 'recons_dataset/combined_dataset.csv')
 data = pd.read_csv(path_df)
 
 scaler = MinMaxScaler()
+scaler.clip = False 
 train, test = train_test_split(data, test_size=0.25)
 
 X_train = train.drop('num', axis=1)
