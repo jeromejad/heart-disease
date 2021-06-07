@@ -30,6 +30,7 @@
     
     <div class="container p-5">
         <div class="col-lg-12 element p-3">
+            <div class="p-3">
                 <form action="{{ url_for('result') }}" method="post">
                     <br>
                     <br>
@@ -38,17 +39,17 @@
                             <div class="col-lg-4 col-md-4">
                                 <label for="age">Enter your age</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <input type="text" class="form-control" id="age" name="age" placeholder="Your current age in years">
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-4 col-md-4 inputs">
                                 <label for="sex">Enter your Gender</label>
                             </div>
                             <div class="col-lg-8 col-md-8">
-                                <select class="form-control" id="sex" name="sex">
+                                <select class="form-control inputs" id="sex" name="sex">
                                     <option value="1">Male</option>
                                     <option value="0">Female</option>
                                 </select>
@@ -56,10 +57,10 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-4 col-md-4 ">
                                 <label for="trestbps">Resting blood pressure (in mm Hg on admission to the hospital) </label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <input type="text" class="form-control" id="trestbps" name="trestbps" placeholder="Your Blood Pressure">
                             </div>
                         </div>
@@ -68,7 +69,7 @@
                             <div class="col-lg-4 col-md-4">
                                 <label for="chol">Serum Cholestrol in mg/dl </label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <input type="text" class="form-control" id="chol" name="chol" placeholder="Cholestrol">
                             </div>
                         </div>
@@ -77,7 +78,7 @@
                             <div class="col-lg-4 col-md-4">
                                 <label for="fbs">Fasting blood sugar>120mg/dl</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <select class="form-control" id="fbs" name="fbs">
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
@@ -89,7 +90,7 @@
                             <div class="col-lg-4 col-md-4">
                                 <label for="restecg">Rest ECG results</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <select class="form-control" id="restecg" name="restecg">
                                     <option value="0">Normal</option>
                                     <option value="1">Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) </option>
@@ -99,19 +100,19 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-4 col-md-4 inputs">
                                 <label for="thalach">Maximum heart rate achieved during ecg</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <input type="text" class="form-control" id="thatach" name="thalach" placeholder="Max heart rate">
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-lg-4 col-md-4">
+                            <div class="col-lg-4 col-md-4 ">
                                 <label for="exang">Chest pain during exercise?</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
+                            <div class="col-lg-8 col-md-8 inputs">
                                 <select class="form-control" id="exang" name="exang">
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
@@ -123,8 +124,8 @@
                             <div class="col-lg-4 col-md-4">
                                 <label for="cp">Chest pain type?</label>
                             </div>
-                            <div class="col-lg-8 col-md-8">
-                                <select class="form-control" id="cp" name="cp">
+                            <div class="col-lg-8 col-md-8 ">
+                                <select class="form-control inputs" id="cp" name="cp">
                                     <option value="0">No chest pain</option>
                                     <option value="1">Typical angina(Chest pain due to emotional or physical stress</option>
                                     <option value="2">Atypical angina(Discomfort in chest, no severe</option>
@@ -138,7 +139,8 @@
                         <center>
                             <button type="submit" class="btn btn-outline-info" value="submit">Submit</button>
                         </center>
-                </form>
+                    </form>
+                </div>    
             </div>
         </div>
         <!-- Optional JavaScript -->
@@ -179,6 +181,13 @@ body {
 .navbar-brand {
     color: #1DA1F2;
   letter-spacing: 1px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 </style>
 

@@ -51,7 +51,7 @@ def result():
     if y == 0:
         return render_template('nodisease.html')
 
-    # y=1,2,4,4 are stages of heart disease
+    # y=1,2,3,4 are stages of heart disease
     else:
         return render_template('heartdisease.html', stage=int(y))
 
