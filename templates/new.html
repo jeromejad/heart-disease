@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .para {
+             color: red;
+             text-align: center;
+             box
+         }
+         a {
+             color: green;
+             
+         }
+         .text :hover {
+             color: red;
+
+         }
+         .text :active {
+             color: yellow;
+         }
+
+     </style>
+</head>
+<header>
+    <h6>Welcome</h6>
+</header>
+<body>
+    <div> 
+        <p class="para">Hi this is paragraph</p>
+        <a class="text" href="https://www.google.com">Click ME</a>
+    </div>
+    <input type="text" id="input1">
+    <button onclick="change()">Submit</button>
+    <span id="here"></span>
+</body>
+</html>
+<style></style>
+<script>
+    var text = document.getElementById("input1");
+    Object.addEventListener(click, "change");
+    function change() {
+        
+      document.getElementById("here").innerHTML(text);
+    }
+</script>

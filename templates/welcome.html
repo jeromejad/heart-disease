@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="static/welcome.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -31,13 +32,11 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">HEART</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HEART DISEASE PREDICTION</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -53,18 +52,16 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Heart Disease prediction</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Heart Disease prediction</span><br>
-    <span class="w3-large">with the help of Machine Learning(Random Forest Regression).</span>
-    <p><a href="/home" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Start Now</a></p>
+<header class="bgimg-1 w3-display-container w3-grayscale-min"  id="home">
+  <div class="w3-display-left w3-text-white pl-lg-5 pl-sm-1" style=" width:100%;" >
+    <span class="w3-jumbo w3-hide-small ">Heart Disease prediction</span><br>
+    <span class="w3-large ">  with Machine Learning.</span>
+    <div class="pt-3">
+    <p><a href="/home" class="btn-light w3-button btn-lg">Start Now</a></p></div>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -77,7 +74,7 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="w3-container" style="padding:60px 16px" id="about">
   <h3 class="w3-center">ABOUT THE PROJECT</h3>
   <p class="w3-center w3-large">Key features of our project</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -107,51 +104,51 @@ body, html {
 
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
+<div class="w3-container w3-light-grey" style="padding:60px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The only one who runs the company</p>
+  <p class="w3-center w3-large"></p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="static/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="static/team2.jpg" alt="Sachin" style="width:100%"> -->
+        <div class="w3-container pt-2">
           <h3>Sachin</h3>
           <p class="w3-opacity">CEO & Founder</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <a href="mailto:sachin@pornhub.com"><p><button  class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact me </button></p></a>
+          <a href="mailto:sachin@gmail.com"><p><button  class="w3-button  w3-block"><i class="fa fa-envelope"></i> Contact </button></p></a>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="static/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="static/team1.jpg" alt="Sachin" style="width:100%"> -->
+        <div class="w3-container pt-2">
           <h3>Sachin</h3>
           <p class="w3-opacity">Art Director</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <a href="mailto:sachin@pornhub.com"><p><button  class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact me </button></p></a>
+          <a href="mailto:sachin@gmail.com"><p><button  class="w3-button  w3-block"><i class="fa fa-envelope"></i> Contact </button></p></a>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="static/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="static/team3.jpg" alt="Sachin" style="width:100%"> -->
+        <div class="w3-container pt-2">
           <h3>Sachin</h3>
           <p class="w3-opacity">Web Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <a href="mailto:sachin@pornhub.com"><p><button  class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact me </button></p></a>
+          <a href="mailto:sachin@gmail.com"><p><button  class="w3-button  w3-block"><i class="fa fa-envelope"></i> Contact </button></p></a>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="static/team4.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="static/team4.jpg" alt="Sachin" style="width:100%"> -->
+        <div class="w3-container pt-2">
           <h3>Sachin</h3>
           <p class="w3-opacity">Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-           <a href="mailto:sachin@pornhub.com"><p><button  class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact me </button></p></a>
+           <a href="mailto:sachin@gmail.com"><p><button  class="w3-button  w3-block"><i class="fa fa-envelope"></i> Contact </button></p></a>
         </div>
       </div>
     </div>
@@ -162,7 +159,7 @@ body, html {
 
 
 <!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
+<div class="w3-container  w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Our Skills.</h3>
@@ -172,7 +169,7 @@ body, html {
       tempor incididunt ut labore et dolore.</p>
     </div>
     <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Machine Learning</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
       </div>
@@ -180,7 +177,7 @@ body, html {
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
       </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Presentation</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
       </div>
@@ -191,21 +188,21 @@ body, html {
 
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+<div class="w3-container w3-light-grey" style="padding:60px 16px" id="contact">
+  <h3 >CONTACT</h3>
+  <p class=" w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:20px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> INDIA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 959562955</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: SACHIN@mail.com</p>
     <br>
    
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-black w3-padding-55">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
