@@ -2,9 +2,10 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var router = express.Router();
-
+app.set("view engine", "html");
+app.use(express.static(__dirname));
 router.get("/", function(req, res){
-	res.render("./index.html");
+	res.render("index");
 	
 });
 
