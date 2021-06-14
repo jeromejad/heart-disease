@@ -40,7 +40,7 @@
                                 <label for="age">Enter your age</label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <input type="text" class="form-control" id="age" name="age" placeholder="Your current age in years">
+                                <input type="text" class="form-control" id="age" name="age" placeholder="Your current age in years" required>
                             </div>
                         </div>
                         <br>
@@ -49,7 +49,7 @@
                                 <label for="sex">Enter your Gender</label>
                             </div>
                             <div class="col-lg-8 col-md-8">
-                                <select class="form-control inputs" id="sex" name="sex">
+                                <select class="form-control inputs" id="sex" name="sex" required>
                                     <option value="1">Male</option>
                                     <option value="0">Female</option>
                                 </select>
@@ -61,7 +61,7 @@
                                 <label for="trestbps">Resting blood pressure (in mm Hg on admission to the hospital) </label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <input type="text" class="form-control" id="trestbps" name="trestbps" placeholder="Your Blood Pressure">
+                                <input type="text" class="form-control" id="trestbps" name="trestbps" placeholder="Your Blood Pressure" required>
                             </div>
                         </div>
                         <br>
@@ -70,7 +70,7 @@
                                 <label for="chol">Serum Cholestrol in mg/dl </label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <input type="text" class="form-control" id="chol" name="chol" placeholder="Cholestrol">
+                                <input type="text" class="form-control" id="chol" name="chol" placeholder="Cholestrol" required>
                             </div>
                         </div>
                         <br>
@@ -79,7 +79,7 @@
                                 <label for="fbs">Fasting blood sugar>120mg/dl</label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <select class="form-control" id="fbs" name="fbs">
+                                <select class="form-control" id="fbs" name="fbs" required>
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
@@ -91,7 +91,7 @@
                                 <label for="restecg">Rest ECG results</label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <select class="form-control" id="restecg" name="restecg">
+                                <select class="form-control" id="restecg" name="restecg" required>
                                     <option value="0">Normal</option>
                                     <option value="1">Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) </option>
                                     <option value="2">Showing probable or definite left ventricular hypertrophy by Estes' criteria</option>
@@ -104,7 +104,7 @@
                                 <label for="thalach">Maximum heart rate achieved during ecg</label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <input type="text" class="form-control" id="thatach" name="thalach" placeholder="Max heart rate">
+                                <input type="text" class="form-control" id="thatach" name="thalach" placeholder="Max heart rate" required>
                             </div>
                         </div>
                         <br>
@@ -113,7 +113,7 @@
                                 <label for="exang">Chest pain during exercise?</label>
                             </div>
                             <div class="col-lg-8 col-md-8 inputs">
-                                <select class="form-control" id="exang" name="exang">
+                                <select class="form-control" id="exang" name="exang" required>
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
@@ -125,7 +125,7 @@
                                 <label for="cp">Chest pain type?</label>
                             </div>
                             <div class="col-lg-8 col-md-8 ">
-                                <select class="form-control inputs" id="cp" name="cp">
+                                <select class="form-control inputs" id="cp" name="cp" required>
                                     <option value="0">No chest pain</option>
                                     <option value="1">Typical angina(Chest pain due to emotional or physical stress</option>
                                     <option value="2">Atypical angina(Discomfort in chest, no severe</option>
@@ -179,7 +179,6 @@ body {
     font-family: poppins;
 }
 .navbar-brand {
-    color: #1DA1F2;
   letter-spacing: 1px;
 }
 
